@@ -17,7 +17,27 @@ class HumanMaker {
         }
     }
 
+}
 
+export class MetricToImperial {
+
+    static kgToLb(kg: number): number {
+        return Math.floor(kg * 2.2)
+    }
+
+    static lbToKg(lb: number): number {
+        return Math.floor(lb / 2.2)
+    }
+
+    static cmToFtIn(cm: number): number {
+        let output = cm / 30.48
+        return Math.floor(output)
+    }
+
+    static ftInToCm(ft: number): number {
+        return ft * 30.48
+
+    }
 }
 
 
